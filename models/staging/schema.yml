@@ -11,6 +11,7 @@ sources:
     tables:
       - name: All_green_data
       - name: All_yellow_data
+      - name: All_fhv_data
 
 models:
   - name: stg_all_green_data
