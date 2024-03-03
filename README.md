@@ -21,8 +21,14 @@ The datasets used in this project include:
    - Data will undergo standardization, normalization, and feature engineering processes to prepare it for analysis and modeling.
 
 3. **Model Building:**
-   - Leveraging the dbt (data build tool) framework, models will be constructed to extract meaningful insights from the processed data.
-   - Advanced analytics techniques such as regression, clustering, and time series analysis will be applied to identify patterns and trends within the taxi data.
+   - **Data Extraction:** 
+     - Utilize dbt models to connect to your data source (e.g., raw NYC taxi trip data) and extract relevant information for analysis. This process may involve filtering, selecting specific columns, and potentially joining data from multiple sources.
+   
+   - **Data Transformation:** 
+     - Craft dbt models to transform the extracted data into a clean and standardized format. This could involve handling missing values, converting data types, and aggregating data to different granularities.
+   
+   - **Data Modeling:** 
+     - Design and implement dbt models to create specific dimensions and facts tables required for your analysis. Consider techniques like dimensional modeling to organize data for efficient querying and analysis.
 
 4. **Data Quality Testing:**
    - Rigorous data quality checks will be performed at various stages of the pipeline to ensure accuracy and reliability.
@@ -31,6 +37,10 @@ The datasets used in this project include:
 5. **Visualization using Looker Studio:**
     -  Looker Studio is utilized for visualization and reporting purposes, providing interactive dashboards and reports.
     -  Visualizations aid in the interpretation of complex patterns and trends, facilitating effective decision-making for stakeholders.
+## Pipeline Workflow Diagram
+
+![Data Analytics Pipeline](https://user-images.githubusercontent.com/4315804/148699280-964c4e0b-e685-4c0f-a266-4f3e097156c9.png)
+
 
 ## Expected Outcomes:
 - Identification of peak taxi demand hours, popular routes, and customer demographics.
